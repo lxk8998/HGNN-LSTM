@@ -7,29 +7,114 @@ This repository provides the implementation of **HGNN-LSTM**, a hybrid deep lear
 ```text
 HGNN-LSTM/
 │── HGNN_LSTM/
-│   ├── main.py        # Data preprocessing script
-│   ├── models.py        # Data preprocessing script
-│   ├── run_experiments.py        # Data preprocessing script
-│   └── trainer.py           # Dataset loading and formatting
+│   ├── main.py        
+│   ├── models.py        
+│   ├── run_experiments.py        
+│   └── trainer.py          
 │── baseline/
-│   ├── GNN_main.py               # Heterogeneous graph neural network module
-│   ├── GNN_run_experiments.py               # Heterogeneous graph neural network module
-│   ├── models.py               # Heterogeneous graph neural network module
-│   ├── temporal_model_main.py               # Heterogeneous graph neural network module
-│   ├── temporal_model_run_experiments.py               # LSTM temporal modeling module
-│   └── trainer.py          # Integrated HGNN-LSTM model
+│   ├── GNN_main.py              
+│   ├── GNN_run_experiments.py              
+│   ├── models.py               
+│   ├── temporal_model_main.py               
+│   ├── temporal_model_run_experiments.py              
+│   └── trainer.py          
 │── utils/
-│   ├── __init__.py        # Graph construction utilities
-│   ├── concat_features.py        # Graph construction utilities
-│   ├── early_stop.py        # Graph construction utilities
-│   ├── metrics.py        # Graph construction utilities
-│   ├── reverse_normalization.py        # Graph construction utilities
-│   ├── save_checkpoint.py        # Graph construction utilities
-│   ├── save_node_metrics.py        # Graph construction utilities
-│   ├── save_npz.py        # Graph construction utilities
-│   ├── split_hydro.py        # Graph construction utilities
-│   └── split_meteo.py            # Evaluation metrics
-│── .gitignore                  # Model training script
-│── LICENSE             # Configuration file
+│   ├── __init__.py       
+│   ├── concat_features.py      
+│   ├── early_stop.py        
+│   ├── metrics.py       
+│   ├── reverse_normalization.py        
+│   ├── save_checkpoint.py        
+│   ├── save_node_metrics.py        
+│   ├── save_npz.py        
+│   ├── split_hydro.py        
+│   └── split_meteo.py           
+│── .gitignore                 
+│── LICENSE             
 │── README.md
+
+# File Description
+
+## HGNN_LSTM/
+
+**main.py**  
+Main entry script for training, validation, and testing the HGNN-LSTM model.
+
+**models.py**  
+Definitions of the HGNN-LSTM model architecture, including spatial and temporal components.
+
+**run_experiments.py**  
+Script for launching training experiments and defining hyperparameter settings.
+
+**trainer.py**  
+Training pipeline that loads data from the dataloader, performs forward computation, loss calculation, and backpropagation.
+
+---
+
+## baseline/
+
+**GNN_main.py**  
+Main script for training and evaluating graph neural network baseline models.
+
+**GNN_run_experiments.py**  
+Experiment launcher and hyperparameter configuration for GNN-based baseline models.
+
+**models.py**  
+Model architecture definitions for baseline graph neural networks.
+
+**temporal_model_main.py**  
+Main script for training and evaluating temporal baseline models (e.g., LSTM).
+
+**temporal_model_run_experiments.py**  
+Experiment launcher for temporal baseline models.
+
+**trainer.py**  
+Training and evaluation pipeline for baseline models.
+
+---
+
+## utils/
+
+**__init__.py**  
+Utility module initialization.
+
+**concat_features.py**  
+Utilities for concatenating multi-source input features.
+
+**early_stop.py**  
+Early stopping strategy based on validation performance.
+
+**metrics.py**  
+Evaluation metrics for model performance assessment.
+
+**reverse_normalization.py**  
+Functions for reversing normalized data to original scales.
+
+**save_checkpoint.py**  
+Utilities for saving and loading model checkpoints.
+
+**save_node_metrics.py**  
+Functions for saving node-level evaluation metrics.
+
+**save_npz.py**  
+Utilities for saving processed data in NPZ format.
+
+**split_hydro.py**  
+Data splitting utilities for hydrological station data.
+
+**split_meteo.py**  
+Data splitting utilities for meteorological station data.
+
+---
+
+## Other Files
+
+**.gitignore**  
+Specifies files and directories to be ignored by Git.
+
+**LICENSE**  
+License file for the project.
+
+**README.md**  
+Project documentation.
 
