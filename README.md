@@ -43,7 +43,7 @@ HGNN-LSTM/
 Main entry script for training, validation, and testing the HGNN-LSTM model.
 
 **models.py**  
-Definitions of the HGNN-LSTM model architecture, including spatial and temporal components.
+Definitions of the HGNN-LSTM model architecture.
 
 **run_experiments.py**  
 Script for launching training experiments and defining hyperparameter settings.
@@ -56,13 +56,13 @@ Training pipeline that loads data from the dataloader, performs forward computat
 ## baseline/
 
 **GNN_main.py**  
-Main script for training and evaluating graph neural network baseline models.
+Main script for training and evaluating temporal GNN-LSTM model.
 
 **GNN_run_experiments.py**  
-Experiment launcher and hyperparameter configuration for GNN-based baseline models.
+Experiment launcher for GNN-LSTM model.
 
 **models.py**  
-Model architecture definitions for baseline graph neural networks.
+Model architecture definitions for baseline models.
 
 **temporal_model_main.py**  
 Main script for training and evaluating temporal baseline models (e.g., LSTM).
@@ -81,7 +81,7 @@ Training and evaluation pipeline for baseline models.
 Utility module initialization.
 
 **concat_features.py**  
-Utilities for concatenating multi-source input features.
+Utilities for concatenating meteorological and hydrological station features.
 
 **early_stop.py**  
 Early stopping strategy based on validation performance.
@@ -99,7 +99,7 @@ Utilities for saving and loading model checkpoints.
 Functions for saving node-level evaluation metrics.
 
 **save_npz.py**  
-Utilities for saving processed data in NPZ format.
+Utilities for saving prediction data in NPZ format.
 
 **split_hydro.py**  
 Data splitting utilities for hydrological station data.
@@ -109,14 +109,4 @@ Data splitting utilities for meteorological station data.
 
 ---
 
-## Other Files
-
-**.gitignore**  
-Specifies files and directories to be ignored by Git.
-
-**LICENSE**  
-License file for the project.
-
-**README.md**  
-Project documentation.
 
