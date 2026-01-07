@@ -17,7 +17,9 @@ HGNN-LSTM/
 │   ├── models.py               
 │   ├── temporal_model_main.py               
 │   ├── temporal_model_run_experiments.py              
-│   └── trainer.py          
+│   └── trainer.py
+│── data/
+│   ├── data.xlsx             
 │── utils/
 │   ├── __init__.py       
 │   ├── concat_features.py      
@@ -72,6 +74,11 @@ Experiment launcher for temporal baseline models.
 
 **trainer.py**  
 Training and evaluation pipeline for baseline models.
+
+---
+## data/
+**data.xlsx**  
+The data of this study.
 
 ---
 
