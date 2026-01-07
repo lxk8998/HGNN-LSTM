@@ -78,7 +78,7 @@ Training and evaluation pipeline for baseline models.
 ---
 ## data/
 **data.xlsx**  
-The data of this study.
+The data of this study.Due to data confidentiality, only part of the dataset used in this study is provided in the data directory. Data from the BY meteorological station are included for completeness, although this station was not used in the experiments.
 
 ---
 
