@@ -4,7 +4,7 @@ This repository provides the implementation of **HGNN-LSTM**, a hybrid deep lear
 
 ## Repository Structure
 
-```text
+```
 HGNN-LSTM/
 │── HGNN_LSTM/
 │   ├── main.py        
@@ -33,7 +33,8 @@ HGNN-LSTM/
 │── LICENSE             
 │── README.md
 
-```markdown
+```
+
 # File Description
 
 ## HGNN_LSTM/
