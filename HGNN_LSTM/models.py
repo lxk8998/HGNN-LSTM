@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from torch_geometric.nn import HeteroConv,GraphConv
+from torch_geometric.nn import HeteroConv, GraphConv
 import torch.nn.functional as F
 import torch.nn.init as init
 
@@ -110,4 +110,5 @@ class HGNN_LSTM(torch.nn.Module):
         # (batch_size, num_nodes_hydro, futurelen)
         predictions = torch.stack(outputs, dim=1)
         return F.leaky_relu(predictions) 
+
 
