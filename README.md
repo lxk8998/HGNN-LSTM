@@ -19,18 +19,17 @@ HGNN-LSTM/
 │   ├── temporal_model_run_experiments.py               # LSTM temporal modeling module
 │   └── trainer.py          # Integrated HGNN-LSTM model
 │── utils/
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   ├── graph_utils.py        # Graph construction utilities
-│   └── metrics.py            # Evaluation metrics
-│── train.py                  # Model training script
-│── test.py                   # Model evaluation script
-│── config.yaml               # Configuration file
+│   ├── __init__.py        # Graph construction utilities
+│   ├── concat_features.py        # Graph construction utilities
+│   ├── early_stop.py        # Graph construction utilities
+│   ├── metrics.py        # Graph construction utilities
+│   ├── reverse_normalization.py        # Graph construction utilities
+│   ├── save_checkpoint.py        # Graph construction utilities
+│   ├── save_node_metrics.py        # Graph construction utilities
+│   ├── save_npz.py        # Graph construction utilities
+│   ├── split_hydro.py        # Graph construction utilities
+│   └── split_meteo.py            # Evaluation metrics
+│── .gitignore                  # Model training script
+│── LICENSE             # Configuration file
 │── README.md
 
